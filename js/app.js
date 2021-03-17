@@ -1,42 +1,113 @@
 'use strict';
+let result1=0;
+let major =prompt('Is my major civil engineering?');
+switch (major.toLowerCase())
+{
+case 'yes':
+case 'y':
+  result1=result1+1;
+  alert('It is Correct !');
+  console.log(major);
+  break;
+case 'no':
+case 'n':
+  alert('Try Again!!');
+  console.log(major);
+  break;
+}
 
-alert('welcome to my page');
+let age =prompt('Am I 27 years old?');
+switch (age.toUpperCase())
+{
+case 'yes':
+case 'y':
+  alert('Wrong');
+  console.log(age);
+  break;
+case 'no':
+case 'n':
+  result=result+1;
+  alert('You guessed it ');
+  console.log(age);
+  break;
+}
+
+let Language= prompt('Dose I speak turkish language?');
+switch (Language.toLowerCase())
+{
+case 'yes':
+case 'y':
+  alert('just A little ');
+  console.log(Language);
+  break;
+case 'no':
+case 'n':
+  result1=result1+1;
+  alert('Unfortunately');
+  console.log(Language);
+  break;
+}
+
+let name1= prompt('Is my name Muhammad?');
+switch (name1.toUpperCase())
+{
+case 'yes':
+case 'y':
+  result1=result1+1;
+  alert('yes my name is muhammad');
+  console.log(name1);
+  break;
+case 'no':
+case 'n':
+  alert('NO NO NO');
+  console.log(name1);
+  break;
+}
+
+let hopes= prompt('is favorite hobbies are programming?');
+switch (hopes.toLowerCase())
+{
+case 'yes':
+case 'y':
+  result1=result1+1;
+  alert('yes true');
+  console.log(hopes);
+  break;
+case 'no':
+case 'n':
+  alert('NOOOO!');
+  console.log(hopes);
+  break;
+}
 
 
-let name = prompt('what is your name ?');
-alert('will done thank you'+' '+ name);
-console.log('user Name', name);
+alert('You have 4 guesses, guess from 1-20');
 
 
+let guess = Number(prompt('what is your guess ?'));
 
-let start  = prompt('does muhammad visited petra ??');
-alert('Nice '+' '+ name);
-console.log('visit',start.toLowerCase());
+for (let i=0;i<=4;i++){
+  if (15 === guess){
+    result1=result1+1;
+    alert('congratulations its right');
+    break;
+  }else{
+    guess = prompt('Try Again not matched');
+  }
+}
 
+alert('You have 6 guesses, guess one off my favorite animals');
 
+let animals = ['cats ,dogs,ants']; 
+let guess1 = prompt('guess one off my favorite animals');
 
-let age = prompt('is my age 26??');
-alert('keep going'+' '+ name);
-console.log('the age',age.toLowerCase());
-
-
-
-let work = prompt('does i worked for the Save the Children organization?');
-alert('Good job two questions left'+' '+name);
-console.log('SOjob',work.toLowerCase());
-
-
-
-let hope = prompt('does muhammad  love porograming');
-alert('Press OK to contnue');
-console.log('like porograming',hope.toLowerCase());
-
-
-
-
-let animal = prompt('does muhammad love catS??');
-alert('will done'+' '+ name);
-console.log('love pets',animal.toUpperCase());
-
-
-
+for(let i=0;i<=6; i++){
+  if (guess1 ==='dogs' || guess1==='monkyes' || guess1 ==='fieshs'){
+    result1=result1+1;
+    alert('Correct !!');
+    break;
+  }else{
+    guess1 = prompt('Wrong !');
+  }
+}
+alert('Your result ' + result1);
