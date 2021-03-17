@@ -4,7 +4,7 @@ let result1 = 0;
 
 
 // //question1
-// let major =prompt('Is my major civil engineering?');
+// let major =prompt('Is my major psycology?');
 // switch (major.toLowerCase())
 // {
 // case 'yes':
@@ -22,7 +22,7 @@ let result1 = 0;
 
 // q1
 function guess1() {
-  let major =prompt('Is my major civil engineering?');
+  let major =prompt('Is my major psycology?');
   switch (major.toLowerCase())
   {
   case 'yes':
