@@ -20,7 +20,7 @@ let result1 = 0;
 //   break;
 // }
 
-q1
+// q1
 function guess1() {
   let major =prompt('Is my major civil engineering?');
   switch (major.toLowerCase())
