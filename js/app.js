@@ -4,6 +4,7 @@ let result1 = 0;
 
 
 //question1
+function guess1() {
 
 let major =prompt('Is my major psycology?');
 switch (major.toLowerCase())
@@ -20,7 +21,8 @@ case 'n':
   console.log(major);
   break;
 }
-
+}
+guess1();
 
 
 
@@ -30,6 +32,7 @@ case 'n':
 
 //question2
 
+function guess2(){
 let age =prompt('Am I 27 years old?');
 switch (age.toUpperCase())
 {
@@ -45,13 +48,15 @@ case 'n':
   console.log(age);
   break;
 }
-
+}
+guess2();
 
 
 
 
 //question3
 
+function guess3(){
 let Language= prompt('Dose I speak turkish language?');
 switch (Language.toLowerCase())
 {
@@ -67,7 +72,8 @@ case 'n':
   console.log(Language);
   break;
 }
-
+}
+guess3();
 
 
 
@@ -75,6 +81,7 @@ case 'n':
 
 //question4
 
+function guess4(){
 let name1= prompt('Is my name Muhammad?');
 switch (name1.toUpperCase())
 {
@@ -90,8 +97,8 @@ case 'n':
   console.log(name1);
   break;
 }
-
-
+}
+guess4();
 
 
 
@@ -99,6 +106,7 @@ case 'n':
 //question5
 
 
+function guess5(){
 let hopes= prompt('is favorite hobbies are programming?');
 switch (hopes.toLowerCase())
 {
@@ -114,13 +122,15 @@ case 'n':
   console.log(hopes);
   break;
 }
-
+}
+guess5();
 
 
 
 //qustion 6
 
 
+function guess6(){
 alert('You have 4 guesses, guess from 1-20');
 
 
@@ -135,13 +145,15 @@ for (let i=0;i<=4;i++){
     guess = prompt('Try Again not matched');
   }
 }
-
+}
+guess6();
 
 
 
 // qustion 7
 
 
+function guess7(){
 alert('You have 6 guesses, guess one off my favorite animals');
 
 let animals = ['cats ,dogs,ants'];
@@ -157,5 +169,6 @@ for(let i=0;i<=6; i++){
   }
 }
 alert('Your result ' + result1);
-
+}
+guess7();
 
